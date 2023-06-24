@@ -1,0 +1,139 @@
+// .orders {
+//   display: flex;
+//   justify-content: center;
+//   color: #555;
+
+//   .container {
+//     width: 1400px;
+//     padding: 50px 0px;
+
+//     .title {
+//       display: flex;
+//       justify-content: space-between;
+
+//       button {
+//         background-color: #1dbf73;
+//         color: white;
+//         font-weight: 500;
+//         border: none;
+//         padding: 10px;
+//         cursor: pointer;
+//       }
+//     }
+
+//     table {
+//       width: 100%;
+
+//       tr {
+//         height: 50px;
+//         th {
+//           text-align: left;
+//         }
+//         td {
+
+//           sup{
+//             font-size: 12px;
+//           }
+
+//           .image {
+//             width: 50px;
+//             height: 25px;
+//             object-fit: cover;
+//           }
+
+//           .message {
+//             width: 25px;
+//             cursor: pointer;
+//           }
+//         }
+//         &:nth-child(even) {
+//           background-color: #1dbf730f;
+//         }
+//       }
+//     }
+//   }
+// }
+
+.orders {
+  display: flex;
+  justify-content: center;
+  color: #555;
+
+  .container {
+    width: 1400px;
+    padding: 50px 0px;
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        background-color: #1dbf73;
+        color: white;
+        font-weight: 500;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #159e5d;
+      }
+    }
+
+    table {
+      width: 100%;
+
+      tr {
+        height: 50px;
+        transition: background-color 0.3s;
+
+        &:nth-child(even) {
+          background-color: #1dbf730f;
+        }
+
+        &:hover {
+          background-color: #f2f2f2;
+          color: #333;
+        }
+
+        th {
+          text-align: left;
+        }
+
+        td {
+          position: relative;
+
+          sup {
+            font-size: 12px;
+          }
+
+          .image {
+            width: 50px;
+            height: 25px;
+            object-fit: cover;
+            transition: transform 0.3s;
+          }
+
+          .message {
+            width: 25px;
+            cursor: pointer;
+            transition: transform 0.3s;
+          }
+
+          &:hover {
+            .image {
+              transform: scale(1.6);
+            }
+
+            .message {
+              transform: translateX(5px);
+              transform: scale(1.6);
+            }
+          }
+        }
+      }
+    }
+  }
+}

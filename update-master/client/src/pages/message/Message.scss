@@ -1,0 +1,115 @@
+.message {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 1200px;
+    margin: 50px;
+
+    .breadcrumbs {
+      font-weight: 300;
+      font-size: 13px;
+      color: #555;
+    }
+
+    .messages {
+      margin: 30px 0px;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      height: 300px;
+      overflow: scroll;
+      justify-content: center;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      .item {
+        display: flex;
+        gap: 20px;
+        max-width: 600px;
+        font-size: 18px;
+        margin-right: 33px;
+
+        &.owner {
+          flex-direction: row-reverse;
+          align-self: flex-end;
+          margin-left: auto;
+
+          p {
+            max-width: 500px;
+            border-radius: 20px 0px 20px 20px;
+            background-color: royalblue;
+            color: white;
+            margin: 0px;
+          }
+        }
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        p {
+          max-width: 500px;
+          padding: 20px;
+          background-color: rgb(93 116 147 / 32%);
+          border-radius: 0px 20px 20px 20px;
+          color: rgb(0, 0, 0);
+          font-weight: 300;
+          margin-left: 33px;
+        }
+
+        span {
+          font-size: 12px;
+          color: #888;
+        }
+      }
+    }
+
+    hr {
+      height: 0.5px;
+      border: none;
+      background-color: rgb(232, 230, 230);
+      margin-bottom: 20px;
+    }
+
+    .write {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      textarea {
+        width: 88%;
+        height: 100px;
+        padding: 10px;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+      }
+
+      button {
+        background-color: #1dbf73;
+        padding: 15px;
+        color: white;
+        font-weight: 500;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 100px;
+        font-size: 27px;
+      }
+    }
+
+    .centered-date {
+      display: flex;
+      justify-content: center;
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+}

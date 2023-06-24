@@ -1,0 +1,28 @@
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 121px;
+}
+
+.video-input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.video-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.video-link {
+  text-decoration: none;
+}
+
+.video-button:hover {
+  background-color: #0056b3;
+}

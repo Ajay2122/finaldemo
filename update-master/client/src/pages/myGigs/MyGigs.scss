@@ -1,0 +1,114 @@
+.myGigs {
+  display: flex;
+  justify-content: center;
+  color: #555;
+
+  .container {
+    width: 1400px;
+    padding: 50px 0px;
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        background-color: #53469b;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        font-size: large;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      button:hover {
+        transform: scale(1.1);
+      }
+
+      button:active {
+        transform: scale(0.9);
+      }
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      tr {
+        height: 50px;
+        animation: fadeIn 0.5s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+
+        th {
+          text-align: left;
+          font-size: 18px;
+          font-weight: bold;
+          color: #333;
+          padding: 10px;
+          transition: color 0.3s ease-in-out;
+        }
+
+        td {
+          sup {
+            font-size: 12px;
+          }
+
+          .image {
+            width: 50px;
+            height: 25px;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+          }
+
+          .delete {
+            width: 24px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+          }
+
+          .delete:hover {
+            transform: rotate(45deg) scale(1.2);
+          }
+        }
+
+        &:nth-child(even) {
+          background-color: #1dbf730f;
+        }
+
+        &:hover {
+          background-color: #eef4ff;
+
+          .image {
+            transform: scale(1.5);
+          }
+
+          .delete {
+            transform: rotate(45deg);
+            transform: scale(1.5);
+          }
+    
+          th {
+            color: #5b499c;
+          }
+
+          .gig:hover {
+            background-color: #4c4283;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
