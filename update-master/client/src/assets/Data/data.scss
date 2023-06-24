@@ -1,0 +1,16 @@
+.black-text {
+    color: rgb(0, 0, 0);
+  }
+  
+  .title {
+    @extend .black-text;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .description {
+    @extend .black-text;
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  

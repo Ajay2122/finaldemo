@@ -1,0 +1,207 @@
+// .add {
+//   display: flex;
+//   justify-content: center;
+
+//   .container {
+//     width: 1400px;
+//     padding: 50px 0px;
+
+//     h1 {
+//       width: max-content;
+//       margin-bottom: 30px;
+//       color: gray;
+//       font-weight: 300;
+//     }
+
+//     .sections {
+//       display: flex;
+//       justify-content: space-between;
+//       gap: 100px;
+
+//       label {
+//         color: gray;
+//         font-size: 18px;
+//       }
+
+//       .info,
+//       .details {
+//         flex: 1;
+//         display: flex;
+//         flex-direction: column;
+//         gap: 10px;
+//         justify-content: space-between;
+
+//         input,
+//         select,
+//         textarea {
+//           padding: 20px;
+//         }
+
+//         .images{
+//           display: flex;
+//           align-items: center;
+//           gap: 20px;
+
+//           .imagesInputs{
+//             display: flex;
+//             flex-direction: column;
+//             gap: 20px;
+//           }
+//         }
+
+//         button {
+//           border: none;
+//           padding: 20px;
+//           color: white;
+//           font-weight: 500;
+//           font-size: 18px;
+//           background-color: #1dbf73;
+//           cursor: pointer;
+//         }
+
+//         .add{
+//           display: flex;
+//           justify-content: space-between;
+
+//           input{
+//             width: 80%;
+//           }
+//         }
+
+//         .addedFeatures{
+//           display: flex;
+//           gap: 20px;
+
+//           button{
+//             height: 30px;
+//             font-size: 12px;
+//             font-weight: 400;
+//             background: transparent;
+//             color: rgb(15, 16, 17);
+//             border: 1px solid rgb(104, 94, 146);
+//             display: flex;
+//             align-items: center;
+//             gap: 20px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+.add {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 1400px;
+    padding: 50px 0px;
+
+    h1 {
+      width: max-content;
+      margin-bottom: 30px;
+      color: gray;
+      font-weight: 300;
+    }
+
+    .sections {
+      display: flex;
+      justify-content: space-between;
+      gap: 100px;
+
+      label {
+        color: gray;
+        font-size: 18px;
+      }
+
+      .info,
+      .details {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+
+        input,
+        select,
+        textarea {
+          padding: 20px;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+        }
+
+        .images {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          .imagesInputs {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          }
+        }
+
+        button {
+          border: none;
+          padding: 20px;
+          color: white;
+          font-weight: 500;
+          font-size: 18px;
+          background-color: #473881c2;
+          cursor: pointer;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #463881;
+            transform: scale(1.05);
+          }
+
+          &:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(81, 0, 255, 0.3);
+          }
+
+          &:active {
+            transform: scale(0.95);
+          }
+        }
+
+        .add {
+          display: flex;
+          justify-content: space-between;
+
+          input {
+            width: 80%;
+          }
+        }
+
+        .addedFeatures {
+          display: flex;
+          gap: 20px;
+
+          button {
+            height: 30px;
+            font-size: 17px;
+            font-weight: 400;
+            background: transparent;
+            color: rgb(26, 5, 104);
+            border: 1px solid rgb(139, 112, 250);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+              background-color: rgba(104, 94, 146, 0.2);
+              transform: translateY(-2px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
